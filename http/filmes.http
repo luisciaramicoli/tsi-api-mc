@@ -1,4 +1,4 @@
-@url = http://localhost:3000/tarefas
+@url = http://localhost:3000/filmes
 GET {{url}}
 
 ###
@@ -9,7 +9,10 @@ POST {{url}}
 Content-Type: application/json
 
 {
-    "titulo" : "Teste"
+    "titulo" : "Teste",
+    "diretor" : "Teste",
+    "ano": 2024,
+    "assistido" : false
 }
 
 ###
@@ -18,7 +21,7 @@ Content-Type: application/json
 
 {
     "titulo": "Registro alterado",
-    "concluida": true
+    "assistido": true
 }
 
 ###
@@ -26,7 +29,7 @@ PUT {{url}}/1
 Content-Type: application/json
 
 {
-    "concluida" : true
+    "assistido" : false
 }
 
 ###
