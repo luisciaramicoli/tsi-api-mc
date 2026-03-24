@@ -1,12 +1,13 @@
 import express from "express";
-import tarefasRoutes from "./routes/filmes";
+import { db } from "./db";
+import generosRouter from "./routes/generos";
 
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
 
-app.use("/filmes", tarefasRoutes);
+app.use("/generos", generosRouter);
 
 app.listen(PORT, () => {
     console.log(`Servidor executando em localhost:${PORT}`);

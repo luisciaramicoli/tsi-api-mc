@@ -1,0 +1,27 @@
+### Buscar todos os gêneros
+GET http://localhost:3000/generos
+
+###
+
+### Criar um novo gênero
+POST http://localhost:3000/generos
+Content-Type: application/json
+
+{
+    "nome": "Ação"
+}
+
+###
+
+### Atualizar um gênero 
+PUT http://localhost:3000/generos/2
+Content-Type: application/json
+
+{
+    "nome": "Comédia"
+}
+
+###
+
+### Deletar um gênero
+DELETE http://localhost:3000/generos/1
